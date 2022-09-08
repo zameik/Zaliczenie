@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li class="navItem"><a href="#start">Start</a></li>
+              <li class="navItem"><a href="#kalkulator">Kalkulator walut</a></li>
+              <li class="navItem"><a href="#opis">Opis</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <section id="start" class="start">
+      <div class="heading-box">
+          <h1>KURSER</h1>
+          <h2>KALKULATOR WALUTOWY</h2>
+      </div>
+  </section>
+
+  <section id="kalkulator" class="kalkulator">
+      
+    
+
+      <div class="wrapper">
+        <h1>KALKULATOR</h1>
+        <form action="#">
+          <div class="amount">
+            <p>KWOTA</p>
+            <input type="text" value="1">
+          </div>
+          <div class="drop-list">
+            <div class="from">
+              <p>Z</p>
+              <div class="select-box">
+                <img src="https://flagcdn.com/48x36/pl.png" alt="flag">
+                <select></select>
+              </div>
+            </div>
+            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+              <p>DO</p>
+              <div class="select-box">
+                <img src="https://flagcdn.com/48x36/fr.png" alt="flag">
+                <select></select>
+              </div>
+            </div>
+          </div>
+          <div class="exchange-rate">Przeliczanie...</div>
+          <button>PRZELICZ</button>
+        </form>
+      </div>
+    
+      <script src="js/country-list.js"></script>
+      <script src="js/script.js"></script>
+  </section>
+
+  <section id="opis" class="opis">
+      <h1>OPIS</h1>
+      <div>
+      <p><a href="www.Kurser.ct8.pl">www.Kurser.ct8.pl</a> jest to strona internetowa pozwalajac na
+        przeliczanie walut w obie strony przy pomocy kalkulatora walut, np. z euro na złoty (PLN) i z PLN na euro lub 
+        z jednej obcej waluty na inną obcą, np. z EUR na USD.Dane średnie kursy walut pochodzą z serwisu o adresie: <a href="https://www.exchangerate-api.com">https://www.exchangerate-api.com</a></p>
+      </div>
+  </section>
+
+  <footer>
+      <div class="flex-container">
+          <div class="flex-item">
+              <p>&copy; 2022 Praca zaliczeniowa</p>
+          </div>
+          <div class="flex-item">
+              <ul class="sitemap">
+                  <li class="">Sebastian Augustyniak 10092</li>
+                  <li class="">Michał Wieczorek 10433</li>
+                  <li class="">Maciej Lipiński 10209</li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+   
+
+  </body>
+</html>

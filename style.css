@@ -1,0 +1,259 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #273135;
+  font-size: 16px;
+  
+}
+
+a{  
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h1,h2,h3,p{
+  cursor:default;
+}
+
+section{
+  padding: 25px 0;
+}
+
+section > h2,h3{
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+section:nth-of-type(odd){
+  background: #404446;
+  color: #18f285;
+}
+
+section:nth-of-type(even){
+  background: #18f285;
+  color: c;
+}
+nav, footer {
+  background-color: #273135;
+  color: #18f285;
+}
+
+nav ul{
+  text-align: center;
+}
+
+.navItem{
+  display:inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0 25px;
+}
+
+.navItem > a {
+  padding: 20px;
+  display: block;
+  width: 250px;
+}
+
+.navItem > a:hover{
+  background: #18f285;
+  color: #273135;
+}
+
+.start{
+  background: #404446;
+  min-height: 450px;
+  position:relative;
+}
+
+.heading-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-box h2{
+  font-weight: 400;
+}
+
+.flex-container{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction:  row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-item{
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.opis {
+  text-align: center;
+}
+
+.opis div{
+  width : 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding : 25px 25px;
+}
+
+.opis a:hover{
+  color:#15cf72;
+}
+.conainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  padding: 20px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer .flex-container{
+  justify-content: space-evenly;
+}
+
+.sitemap > li{
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.sitemap > li:hover{
+  color: #15cf72;
+}
+
+.wrapper{
+  width:30%;
+  padding: 30px;
+  border-radius: 7px;
+  text-align: center;
+  background: #404446;
+  margin: 0 auto;
+  color: #18f285;
+}
+.wrapper header{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #404446;
+  background-color: #15cf72;
+  color: #404446;
+}
+form input:focus{
+  padding: 0 14px;
+  border: 2px solid #18f285;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #15cf72;
+  background: #15cf72;
+}
+
+.select-box{
+  cursor: pointer;
+}
+.select-box img{
+  max-width: 21px;
+}
+.select-box select{
+  cursor: pointer;
+  width: auto;
+  font-size: 16px;
+  background: #15cf72;
+  margin: 0 -5px 0 5px;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #404446;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #18f285;
+  border-radius: 8px;
+  border-right: 2px solid #404446;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button{
+  height: 52px;
+  color: #273135;
+  font-size: 17px;
+  cursor: pointer;
+  background: #15cf72;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #18f285
+}
